@@ -1,7 +1,7 @@
 # ~/.config/fish/config.fish
 
 # Basic env
-set -gx EDITOR zeditor
+set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx TERMINAL kitty
 set -gx BROWSER librewolf
