@@ -60,6 +60,8 @@
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
         "monitors": [
+            "DP-3",
+            "DP-2"
         ],
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
@@ -70,6 +72,115 @@
         "rightClickCommand": "",
         "rightClickFollowMouse": true,
         "screenOverrides": [
+            {
+                "enabled": true,
+                "name": "DP-3",
+                "widgets": {
+                    "center": [
+                        {
+                            "id": "plugin:catwalk"
+                        },
+                        {
+                            "clockColor": "none",
+                            "customFont": "",
+                            "formatHorizontal": "h:mm AP ddd, MMM dd",
+                            "formatVertical": "HH mm - dd MM",
+                            "id": "Clock",
+                            "tooltipFormat": "HH:mm ddd, MMM dd",
+                            "useCustomFont": false
+                        },
+                        {
+                            "compactMode": false,
+                            "diskPath": "/",
+                            "iconColor": "none",
+                            "id": "SystemMonitor",
+                            "showCpuCores": false,
+                            "showCpuFreq": false,
+                            "showCpuTemp": true,
+                            "showCpuUsage": true,
+                            "showDiskAvailable": false,
+                            "showDiskUsage": true,
+                            "showDiskUsageAsPercent": false,
+                            "showGpuTemp": false,
+                            "showLoadAverage": false,
+                            "showMemoryAsPercent": false,
+                            "showMemoryUsage": true,
+                            "showNetworkStats": false,
+                            "showSwapUsage": false,
+                            "textColor": "none",
+                            "useMonospaceFont": true,
+                            "usePadding": false
+                        }
+                    ],
+                    "left": [
+                        {
+                            "characterCount": 2,
+                            "colorizeIcons": false,
+                            "emptyColor": "secondary",
+                            "enableScrollWheel": true,
+                            "focusedColor": "primary",
+                            "followFocusedScreen": true,
+                            "fontWeight": "bold",
+                            "groupedBorderOpacity": 1,
+                            "hideUnoccupied": false,
+                            "iconScale": 0.8,
+                            "id": "Workspace",
+                            "labelMode": "index",
+                            "occupiedColor": "secondary",
+                            "pillSize": 0.6,
+                            "showApplications": false,
+                            "showApplicationsHover": false,
+                            "showBadge": true,
+                            "showLabelsOnlyWhenOccupied": true,
+                            "unfocusedIconsOpacity": 1
+                        }
+                    ],
+                    "right": [
+                        {
+                            "blacklist": [
+                            ],
+                            "chevronColor": "none",
+                            "colorizeIcons": false,
+                            "drawerEnabled": false,
+                            "hidePassive": false,
+                            "id": "Tray",
+                            "pinned": [
+                            ]
+                        },
+                        {
+                            "id": "plugin:usb-drive-manager"
+                        },
+                        {
+                            "id": "plugin:clipper"
+                        },
+                        {
+                            "hideWhenZero": false,
+                            "hideWhenZeroUnread": false,
+                            "iconColor": "none",
+                            "id": "NotificationHistory",
+                            "showUnreadBadge": true,
+                            "unreadBadgeColor": "primary"
+                        },
+                        {
+                            "displayMode": "onhover",
+                            "iconColor": "none",
+                            "id": "Volume",
+                            "middleClickCommand": "pwvucontrol || pavucontrol",
+                            "textColor": "none"
+                        },
+                        {
+                            "colorizeDistroLogo": false,
+                            "colorizeSystemIcon": "none",
+                            "colorizeSystemText": "none",
+                            "customIconPath": "",
+                            "enableColorization": false,
+                            "icon": "noctalia",
+                            "id": "ControlCenter",
+                            "useDistroLogo": false
+                        }
+                    ]
+                }
+            }
         ],
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
@@ -79,6 +190,10 @@
         "widgets": {
             "center": [
                 {
+                    "defaultSettings": {
+                        "hideBackground": false,
+                        "minimumThreshold": 10
+                    },
                     "id": "plugin:catwalk"
                 },
                 {
@@ -134,6 +249,12 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
+                },
+                {
+                    "colorName": "primary",
+                    "hideWhenIdle": true,
+                    "id": "AudioVisualizer",
+                    "width": 200
                 }
             ],
             "right": [
@@ -149,9 +270,35 @@
                     ]
                 },
                 {
+                    "defaultSettings": {
+                        "autoMount": false,
+                        "fileBrowser": "yazi",
+                        "hideWhenEmpty": false,
+                        "iconColor": "none",
+                        "showBadge": false,
+                        "showNotifications": true,
+                        "terminalCommand": "kitty"
+                    },
                     "id": "plugin:usb-drive-manager"
                 },
                 {
+                    "defaultSettings": {
+                        "autoPaste": false,
+                        "autoPasteDelay": 300,
+                        "autoPasteOnRightClick": false,
+                        "cardColors": {
+                        },
+                        "customColors": {
+                        },
+                        "enableTodoIntegration": false,
+                        "fullscreenMode": false,
+                        "hidePanelBackground": false,
+                        "notecardsEnabled": true,
+                        "panelHeight": 0,
+                        "panelWidth": 1450,
+                        "pincardsEnabled": true,
+                        "showCloseButton": true
+                    },
                     "id": "plugin:clipper"
                 },
                 {
@@ -456,7 +603,7 @@
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": false,
         "enableMediaToast": false,
-        "enabled": true,
+        "enabled": false,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
