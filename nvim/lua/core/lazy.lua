@@ -38,7 +38,7 @@ require("lazy").setup({
     end,
   },
 
-  -- ── Which-key: your learning best friend ─────────────────
+-- ── Which-key: your learning best friend ─────────────────
   -- Shows a popup listing available keymaps whenever you pause
   -- mid-sequence. Press <leader> and wait — it'll show you every
   -- command available. Invaluable while learning.
@@ -281,7 +281,7 @@ require("lazy").setup({
     config = function()
       require("lualine").setup({
         options = {
-          theme = "catppuccin",
+          theme = "auto",
           globalstatus = true,   -- One status bar for all splits
         },
         sections = {
